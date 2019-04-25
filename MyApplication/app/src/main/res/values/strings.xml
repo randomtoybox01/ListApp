@@ -1,0 +1,21 @@
+<resources>
+<string name="app_name">Coles Creative List</string>
+
+<string-array name="Weapons">
+    <item>Longsword</item>
+    <item>Greataxe</item>
+    <item>Warhammer</item>
+</string-array>
+
+<string-array name="damage">
+    <item>1000 dmg</item>
+    <item>2000 dmg</item>
+    <item>3000 dmg</item>
+</string-array>
+
+<string-array name="descriptions">
+    <item>For the Noble type</item>
+    <item>Too Barbarian for most</item>
+    <item>The Heaviest of heavy weapons</item>
+</string-array>
+</resources>

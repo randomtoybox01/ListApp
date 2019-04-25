@@ -19,29 +19,48 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent startIntent = getPackageManager().getLaunchIntentForPackage("com.example.colemmyfirstfourfunction");
-                startIntent.putExtra("org.mentorschools.quicklauncher.SOMETHING", "HELLO HUMAN! I AM BOT!");
-                startActivity(startIntent);
+                if (startIntent != null) {
+                    startActivity(startIntent);
+                }
             }
         });
         Button AddCalcBtn = (Button)findViewById(R.id.AddCalcBtn);
-        secondActivity.setOnClickListener(new View.OnClickListener() {
+        AddCalcBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent startIntent = getPackageManager().getLaunchIntentForPackage("com.example.colemfirstappaddition");
-                startIntent.putExtra("org.mentorschools.quicklauncher.SOMETHING", "HELLO HUMAN! I AM BOT!");
-                startActivity(startIntent);
+                if (startIntent != null) {
+                    startActivity(startIntent);
+                }
             }
         });
-        Button googleBtn = (Button)findViewById(R.id.googleBtn);
-        googleBtn.setOnClickListener(new View.OnClickListener() {
+        Button PeachBtn = (Button)findViewById(R.id.PeachBtn);
+        PeachBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String google = "https://www.google.com";
-                Uri webaddress = Uri.parse(google);
-
-                Intent gotoGoogle = new Intent(Intent.ACTION_VIEW, webaddress);
-                if (gotoGoogle.resolveActivity(getPackageManager()) != null) {
-                    startActivity(gotoGoogle);
+                Intent startIntent = getPackageManager().getLaunchIntentForPackage("com.example.listapp");
+                if (startIntent != null) {
+                    startActivity(startIntent);
+                }
+            }
+        });
+        Button CreativeBtn = (Button)findViewById(R.id.CreativeBtn);
+        CreativeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = getPackageManager().getLaunchIntentForPackage("com.example.mycreative");
+                if (startIntent != null) {
+                    startActivity(startIntent);
+                }
+            }
+        });
+        Button ParabolaBtn = (Button)findViewById(R.id.ParabolaBtn);
+        ParabolaBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = getPackageManager().getLaunchIntentForPackage("com.example.coleparabolacalc");
+                if (startIntent != null) {
+                    startActivity(startIntent);
                 }
             }
         });
